@@ -1,36 +1,53 @@
-package assignment1;
+package assignment4;
 
 
 public class Customer {
 	private String customerName;
-	private Address add;
+	private Address residentialAddress;
+	private Address officialAddress;
 	public Customer() {
 		super();
 		customerName="John";
 		}
-	public Customer(String customerName, Address add) {
-		super();
-		this.customerName = customerName;
-		this.add = add;
-	}
+	
 	public String getCustomerName() {
 		return customerName;
 	}
+
 	public void setCustomerName(String customerName) {
 		this.customerName = customerName;
 	}
-	public Address getAdd() {
-		return add;
+
+	public Address getResidentialAddress() {
+		return residentialAddress;
 	}
-	public void setAdd(Address add) {
-		this.add = add;
+
+	public void setResidentialAddress(Address residentialAddress) {
+		this.residentialAddress = residentialAddress;
 	}
-	
+
+	public Address getOfficialAddress() {
+		return officialAddress;
+	}
+
+	public void setOfficialAddress(Address officialAddress) {
+		this.officialAddress = officialAddress;
+	}
+
 	public String getCustomerDetails()
 	{
-		return ("Customer : "+customerName+ " Residential Address :"+add);
+		return ("Customer : "+customerName+ " \nResidential Address :"+residentialAddress+
+				"\nOfficial Address :"+officialAddress);
 		
 	}
+	
+	public Customer(String customerName, Address residentialAddress, Address officeAddress) {
+		super();
+		this.customerName = customerName;
+		this.residentialAddress = residentialAddress;
+		this.officialAddress = officeAddress;
+	}
+	
 	
 	
 	

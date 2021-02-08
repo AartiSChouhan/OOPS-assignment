@@ -1,6 +1,5 @@
-package assignment1;
+package assignment4;
 
-import org.omg.Messaging.SyncScopeHelper;
 
 public class Address {
 	private String addressLine;
